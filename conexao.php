@@ -2,7 +2,7 @@
 $host = 'containers-us-west-128.railway.app';
 $user = 'root';
 $pass = 'dXUdp1YYjwJR2vokuVDS';
-$dbname = 'api';
+$dbname = 'railway';
 $port = '7863';
 $dsn = "mysql:host=".$host.";dbname=".$dbname.";charset=utf8mb4;port=".$port;
 
