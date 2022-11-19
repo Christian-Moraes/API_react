@@ -1,13 +1,13 @@
 <?php
-$host = 'containers-us-west-128.railway.app';
+$host = 'localhost';
 $user = 'root';
-$pass = 'dXUdp1YYjwJR2vokuVDS';
-$dbname = 'railway';
-$port = '7863';
-$dsn = "mysql:host=".$host.";dbname=".$dbname.";charset=utf8mb4;port=".$port;
+$pass = 'root';
+$dbname = 'api';
+//$port = '7863';
+$dsn = "mysql:host=".$host.";dbname=".$dbname;
 
 try {
-  $conn = new PDO($dsn . $dbname, $user, $pass);
+  $conn = new PDO($dsn, $user, $pass);
       $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   } catch(PDOException $e) {
       echo 'ERROR: ' . $e->getMessage();
